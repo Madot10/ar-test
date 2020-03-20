@@ -20,14 +20,11 @@
             embedded
             arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
             vr-mode-ui="enabled: false;"
+            loading-screen="dotsColor: red; backgroundColor: black"
             stats
         >
             <a-marker type="barcode" value="0" size="0.2" smooth="true">
-                <a-box
-                    position="0 -1 0"
-                    color="yellow"
-                    animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
-                ></a-box>
+                <a-box material="opacity: 0.5; color: #F70087;" scale="0.7 0.7 0.7"></a-box>
             </a-marker>
 
             <a-entity camera position="0 0 0" data-aframe-default-camera></a-entity>
