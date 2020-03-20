@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="estilos.css" />
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+
+        <title>Prueba de AR</title>
+    </head>
+    <body style="margin : 0px; overflow: hidden;">
+        <!-- <div class="arjs-loader">
+            <div>Loading, please wait...</div>
+        </div> -->
+
+        <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false;" stats>
+            <a-marker type="barcode" value="0">
+                <a-box position="0 0 0" color="yellow"></a-box>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
