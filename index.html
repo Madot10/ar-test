@@ -23,7 +23,11 @@
             stats
         >
             <a-marker type="barcode" value="0" size="0.2" smooth="true">
-                <a-box position="0 -1 0" color="yellow"></a-box>
+                <a-box
+                    position="0 -1 0"
+                    color="yellow"
+                    animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+                ></a-box>
             </a-marker>
 
             <a-entity camera position="0 0 0" data-aframe-default-camera></a-entity>
